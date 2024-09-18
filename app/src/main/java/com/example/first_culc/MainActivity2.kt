@@ -70,13 +70,13 @@ class MainActivity2 : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            // Формула для розрахунку нижчої теплоти згоряння на робочу масу (МДж/кг)
+            // Формула для розрахунку нижчої теплоти згоряння на робочу масу
             val Q_wm = (QVal * (100 - WVal - AVal)) / 100
 
-            val HValс = HVal * (100-WVal -0.15)/100
-            val CValс = CVal * (100-WVal -0.15)/100
-            val SValс = SVal * (100-WVal -0.15)/100
-            val OValс = OVal * (100-WVal -0.015)/100
+            val HValс = HVal * (100-WVal - AVal)/100
+            val CValс = CVal * (100-WVal - AVal)/100
+            val SValс = SVal * (100-WVal - AVal)/100
+            val OValс = OVal * (100-WVal - AVal)/100
             val AValс = AVal * (100-WVal)/100
             val VValс = VVal * (100-WVal)/100
             // Виведення результату
